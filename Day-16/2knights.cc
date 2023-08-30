@@ -12,11 +12,14 @@ using std::reverse;
 
 int main(int argc, char const *argv[])
 {
-      int k=0;
-      std::cin>>k;
-      for(int i=1; i<=k;i++){
-            int64_t ans = k*k*((k-1)*(k-1)-1)/2 - 4*(k-1)*(k-2);
-            std::cout<<ans<<std::endl;
+      int n=0;
+      std::cin>>n;
+      unsigned long long ans;
+      long long s2;
+      for(size_t k=1; k<=n;k++){
+            ans = (k*k)*((k*k)-1)/2;
+            s2 = 4*(size_t(k)-1)*(size_t(k)-2);
+            std::cout<<ans-s2<<std::endl;
       }
       
 return 0;
