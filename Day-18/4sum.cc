@@ -49,6 +49,7 @@ public:
     }
 };
 
+int foo(int &a);
 
 
 int main(int argc, char const *argv[])
