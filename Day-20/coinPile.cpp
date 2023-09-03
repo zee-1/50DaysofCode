@@ -29,7 +29,6 @@ int main(int argc, char const *argv[])
             }else{
                   double intPart, fracPart;
                   fracPart = modf(y,&intPart);
-                  std::cout<<((fracPart))<<std::endl;
                   if(fracPart==0)
                         std::cout<<"YES"<<std::endl;
                   else
